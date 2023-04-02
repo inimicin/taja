@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgrounfColor">
+
+    <ImageView
+        android:id="@+id/imageOnProfilPage"
+        android:layout_width="416dp"
+        android:layout_height="173dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/group_2" />
+
+    <ImageButton
+        android:id="@+id/buttonEditProfile"
+        android:layout_width="97dp"
+        android:layout_height="95dp"
+        android:layout_marginLeft="40dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/imageOnProfilPage"
+        app:layout_constraintStart_toStartOf="@+id/imageOnProfilPage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/group_14" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:text="Hi, Username"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/buttonEditProfile"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="85dp"
+        android:text="Together We Farm!"
+        android:textColor="@color/textColor"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/buttonEditProfile"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="417dp"
+        android:layout_height="587dp"
+        android:backgroundTint="#00FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageOnProfilPage">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="MY POST"
+            android:textColor="@color/textColor"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="330dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="45dp"
+                    android:backgroundTint="@color/bg2"
+                    app:cardCornerRadius="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="BOKHASI"
+                        android:textColor="@color/backgrounfColor"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="35dp"
+                        android:text="Username"
+                        android:textColor="@color/textColor"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="55dp"
+                        android:text="Saturday, March 04"
+                        android:textColor="@color/textcolor2"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/buttonReadMore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="180dp"
+                        android:layout_marginTop="80dp"
+                        android:text="read more"
+                        android:textColor="@color/textColor" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="330dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="45dp"
+                    android:backgroundTint="@color/bg2"
+                    app:cardCornerRadius="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="BOKHASI"
+                        android:textColor="@color/backgrounfColor"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="35dp"
+                        android:text="Username"
+                        android:textColor="@color/textColor"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="55dp"
+                        android:text="Saturday, March 04"
+                        android:textColor="@color/textcolor2"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/buttonReadMore2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="180dp"
+                        android:layout_marginTop="80dp"
+                        android:text="read more"
+                        android:textColor="@color/textColor" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="330dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="45dp"
+                    android:backgroundTint="@color/bg2"
+                    app:cardCornerRadius="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="BOKHASI"
+                        android:textColor="@color/backgrounfColor"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="35dp"
+                        android:text="Username"
+                        android:textColor="@color/textColor"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="55dp"
+                        android:text="Saturday, March 04"
+                        android:textColor="@color/textcolor2"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/buttonReadMore3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="180dp"
+                        android:layout_marginTop="80dp"
+                        android:text="read more"
+                        android:textColor="@color/textColor" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="45dp"
+            android:backgroundTint="@color/textcolor2"
+            android:text="+ add post"
+            android:textColor="@color/backgrounfColor"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+        <TextView
+            android:id="@+id/myEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="MY EVENT"
+            android:textColor="@color/textColor"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button" />
+
+        <HorizontalScrollView
+            android:id="@+id/scrollEvent"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/myEvent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="330dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="45dp"
+                    android:backgroundTint="@color/bg2"
+                    app:cardCornerRadius="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="BOKHASI"
+                        android:textColor="@color/backgrounfColor"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="35dp"
+                        android:text="Username"
+                        android:textColor="@color/textColor"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="55dp"
+                        android:text="Saturday, March 04"
+                        android:textColor="@color/textcolor2"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/buttonEventRM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="180dp"
+                        android:layout_marginTop="80dp"
+                        android:text="read more"
+                        android:textColor="@color/textColor" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="330dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="45dp"
+                    android:backgroundTint="@color/bg2"
+                    app:cardCornerRadius="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="BOKHASI"
+                        android:textColor="@color/backgrounfColor"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="35dp"
+                        android:text="Username"
+                        android:textColor="@color/textColor"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="55dp"
+                        android:text="Saturday, March 04"
+                        android:textColor="@color/textcolor2"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/buttonEventRM2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="180dp"
+                        android:layout_marginTop="80dp"
+                        android:text="read more"
+                        android:textColor="@color/textColor" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="330dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="45dp"
+                    android:backgroundTint="@color/bg2"
+                    app:cardCornerRadius="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="BOKHASI"
+                        android:textColor="@color/backgrounfColor"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="35dp"
+                        android:text="Username"
+                        android:textColor="@color/textColor"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="55dp"
+                        android:text="Saturday, March 04"
+                        android:textColor="@color/textcolor2"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/buttonEventRM3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="180dp"
+                        android:layout_marginTop="80dp"
+                        android:text="read more"
+                        android:textColor="@color/textColor" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/buttonAddEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="45dp"
+            android:backgroundTint="@color/textcolor2"
+            android:text="+ add event"
+            android:textColor="@color/backgrounfColor"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollEvent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

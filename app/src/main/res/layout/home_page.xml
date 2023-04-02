@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgrounfColor">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/group_11" />
+
+    <ImageButton
+        android:id="@+id/buttonEP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        android:backgroundTint="@color/backgrounfColor"
+        app:srcCompat="@drawable/group_12" />
+
+    <ImageButton
+        android:id="@+id/buttonPB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/backgrounfColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEP"
+        app:srcCompat="@drawable/group_13" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView2"
+        android:layout_width="415dp"
+        android:layout_height="83dp"
+        android:background="#F3FFFFFF"
+        app:backgroundTint="@color/bg2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/buttonProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#00FFFFFF"
+            app:srcCompat="@drawable/baseline_person_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textSize="11dp"
+            android:layout_marginLeft="47dp"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/backgrounfColor"/>
+
+        <ImageButton
+            android:id="@+id/buttonHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#00FFFFFF"
+            app:srcCompat="@drawable/baseline_home_yellow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textSize="11dp"
+            android:textColor="@color/textColor"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"/>
+
+        <ImageButton
+            android:id="@+id/buttonMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="40dp"
+            app:backgroundTint="#00FFFFFF"
+            app:srcCompat="@drawable/baseline_menu_24" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other"
+            android:textSize="11dp"
+            android:textColor="@color/backgrounfColor"
+            android:layout_gravity="right"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"/>
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
