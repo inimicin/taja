@@ -63,8 +63,9 @@ public class HomeFragment extends Fragment {
     }
 
     TabLayout tabLayout;
-    FragmentHomeBinding fragmentHomeBinding;
+    ViewPager viewPager;
 
+    FragmentHomeBinding fragmentHomeBinding;
     FragmentChangeListener fragmentChangeListener;
 
     PanduanFragment panduanFragment;
@@ -78,41 +79,49 @@ public class HomeFragment extends Fragment {
         fragmentChangeListener = (FragmentChangeListener) getActivity();
 
         tabLayout = fragmentHomeBinding.tabLayout;
-        tabLayout.addTab(tabLayout.newTab().setText("Panduan Bertani"));
-        tabLayout.addTab(tabLayout.newTab().setText("Event Pertanian"));
+        // tabLayout.addTab(tabLayout.newTab().setText("Panduan Bertani"));
+        // tabLayout.addTab(tabLayout.newTab().setText("Event Pertanian"));
         tabLayout.setTabGravity(tabLayout.GRAVITY_FILL);
 
-        FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
-        transaction.add(fragmentHomeBinding.containertab.getId(), new PanduanFragment());
-        transaction.commit();
+        viewPager = fragmentHomeBinding.pager;
 
-        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-//                TabItem tabPanduan = fragmentHomeBinding.tabPanduan;
-                FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
-                switch(tab.getPosition()){
-                    case  0 :
-                        transaction.replace(fragmentHomeBinding.containertab.getId(), new PanduanFragment()).commit();
-                        break;
-                    case 1 :
-                        transaction.replace(fragmentHomeBinding.containertab.getId(), new EventFragment()).commit();
-                        break;
-                }
-                System.out.println(tab.getPosition());
-            }
+        tabLayout.setupWithViewPager(viewPager);
 
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
-            }
-        });
+        //create viewpager adapter
+        //here we will create inner class for adapter
+        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), 0);
+        viewPagerAdapter.addFragment(new PanduanFragment(), "Panduan Bertani");
+        viewPagerAdapter.addFragment(new EventFragment(), "Event Pertanian");
+        viewPager.setAdapter(viewPagerAdapter);
 
         return fragmentHomeBinding.getRoot();
+    }
+
+    private class ViewPagerAdapter extends FragmentPagerAdapter {
+        private List<Fragment> fragments = new ArrayList<>();
+        private List<String> fragmentTitles = new ArrayList<>();
+        public ViewPagerAdapter(@NonNull FragmentManager fm, int behavior) {
+            super(fm, behavior);
+        }
+        //add fragment to the viewpager
+        public void addFragment(Fragment fragment, String title){
+            fragments.add(fragment);
+            fragmentTitles.add(title);
+        }
+        @NonNull
+        @Override
+        public Fragment getItem(int position) {
+            return fragments.get(position);
+        }
+        @Override
+        public int getCount() {
+            return fragments.size();
+        }
+        //to setup title of the tab layout
+        @Nullable
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return fragmentTitles.get(position);
+        }
     }
 }
