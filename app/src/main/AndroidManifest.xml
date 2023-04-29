@@ -12,19 +12,17 @@
         android:theme="@style/Theme.TAJA"
         tools:targetApi="31">
         <activity
+            android:name=".EditprofileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="false"
+            android:label="@string/title_activity_login" />
+        <activity
             android:name=".ContainerActivity"
-            android:exported="false" />
-        <activity
-            android:name=".edit_profile"
-            android:exported="false" />
-        <activity
-            android:name=".act_profile"
-            android:exported="false" />
-        <activity
-            android:name=".act_signup"
-            android:exported="false" />
-        <activity
-            android:name=".act_home"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

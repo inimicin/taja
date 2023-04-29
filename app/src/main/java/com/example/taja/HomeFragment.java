@@ -5,7 +5,10 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.viewpager.widget.ViewPager;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +17,9 @@ import android.view.ViewGroup;
 import com.example.taja.databinding.FragmentHomeBinding;
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -89,10 +95,13 @@ public class HomeFragment extends Fragment {
 
         //create viewpager adapter
         //here we will create inner class for adapter
-        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), 0);
+        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getChildFragmentManager(), 0);
         viewPagerAdapter.addFragment(new PanduanFragment(), "Panduan Bertani");
         viewPagerAdapter.addFragment(new EventFragment(), "Event Pertanian");
         viewPager.setAdapter(viewPagerAdapter);
+
+        tabLayout.getTabAt(0).setText("Panduan Bertani");
+        tabLayout.getTabAt(1).setText("Event Pertanian");
 
         return fragmentHomeBinding.getRoot();
     }
