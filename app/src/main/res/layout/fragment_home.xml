@@ -3,7 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< Updated upstream
     android:background="@color/backgrounfColor">
+=======
+    android:background="@color/background_color">
+>>>>>>> Stashed changes
 
     <ImageView
         android:id="@+id/imageContent"
@@ -33,7 +37,7 @@
                 android:id="@+id/tab_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/backgrounfColor"
+                android:backgroundTint="@color/background_color"
                 app:tabTextColor="@color/white"
                 app:tabSelectedTextColor="@color/textColor"
                 app:tabIndicatorColor="@color/textColor"/>

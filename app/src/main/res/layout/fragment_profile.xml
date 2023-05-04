@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgrounfColor">
+    android:background="@color/background_color">
 
     <ImageView
         android:id="@+id/imageOnProfilPage"
@@ -102,7 +102,7 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="10dp"
                         android:text="BOKHASI"
-                        android:textColor="@color/backgrounfColor"
+                        android:textColor="@color/background_color"
                         android:textSize="18dp"
                         android:textStyle="bold" />
 
@@ -148,7 +148,7 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="10dp"
                         android:text="BOKHASI"
-                        android:textColor="@color/backgrounfColor"
+                        android:textColor="@color/background_color"
                         android:textSize="18dp"
                         android:textStyle="bold" />
 
@@ -194,7 +194,7 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="10dp"
                         android:text="BOKHASI"
-                        android:textColor="@color/backgrounfColor"
+                        android:textColor="@color/background_color"
                         android:textSize="18dp"
                         android:textStyle="bold" />
 
@@ -238,7 +238,7 @@
             android:layout_marginRight="45dp"
             android:backgroundTint="@color/textcolor2"
             android:text="+ add post"
-            android:textColor="@color/backgrounfColor"
+            android:textColor="@color/background_color"
             app:cornerRadius="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -286,7 +286,7 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="10dp"
                         android:text="BOKHASI"
-                        android:textColor="@color/backgrounfColor"
+                        android:textColor="@color/background_color"
                         android:textSize="18dp"
                         android:textStyle="bold" />
 
@@ -332,7 +332,7 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="10dp"
                         android:text="BOKHASI"
-                        android:textColor="@color/backgrounfColor"
+                        android:textColor="@color/background_color"
                         android:textSize="18dp"
                         android:textStyle="bold" />
 
@@ -378,7 +378,7 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="10dp"
                         android:text="BOKHASI"
-                        android:textColor="@color/backgrounfColor"
+                        android:textColor="@color/background_color"
                         android:textSize="18dp"
                         android:textStyle="bold" />
 
@@ -422,7 +422,7 @@
             android:layout_marginRight="45dp"
             android:backgroundTint="@color/textcolor2"
             android:text="+ add event"
-            android:textColor="@color/backgrounfColor"
+            android:textColor="@color/background_color"
             app:cornerRadius="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

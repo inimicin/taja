@@ -5,7 +5,11 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< Updated upstream
     android:background="@color/backgrounfColor"
+=======
+    android:background="@color/background_color"
+>>>>>>> Stashed changes
     tools:context=".EditprofileActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -61,7 +65,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+<<<<<<< Updated upstream
                 android:backgroundTint="@color/backgrounfColor"
+=======
+                android:backgroundTint="@color/background_color"
+>>>>>>> Stashed changes
                 android:layout_marginTop="4dp"
                 android:layout_marginBottom="4dp"
                 android:layout_marginLeft="30dp"
@@ -123,7 +131,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+<<<<<<< Updated upstream
             android:backgroundTint="@color/backgrounfColor"
+=======
+            android:backgroundTint="@color/background_color"
+>>>>>>> Stashed changes
             android:layout_marginTop="4dp"
             android:layout_marginBottom="4dp"
             android:layout_marginLeft="30dp"
@@ -188,7 +200,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+<<<<<<< Updated upstream
                 android:backgroundTint="@color/backgrounfColor"
+=======
+                android:backgroundTint="@color/background_color"
+>>>>>>> Stashed changes
                 android:layout_marginTop="4dp"
                 android:layout_marginBottom="4dp"
                 android:layout_marginLeft="30dp"
@@ -246,7 +262,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+<<<<<<< Updated upstream
                 android:backgroundTint="@color/backgrounfColor"
+=======
+                android:backgroundTint="@color/background_color"
+>>>>>>> Stashed changes
                 android:layout_marginTop="4dp"
                 android:layout_marginBottom="4dp"
                 android:layout_marginLeft="30dp"

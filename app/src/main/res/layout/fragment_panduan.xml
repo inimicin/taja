@@ -5,15 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PanduanFragment"
-    android:background="@color/backgrounfColor">
+    android:background="@color/background_color">
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/textColor"
-        android:text="Panduan Bertani"
-        android:layout_marginTop="20dp"
-        android:textSize="18dp"
-        android:textAlignment="center"/>
+        android:layout_marginTop="10dp"/>
 
 </LinearLayout>
