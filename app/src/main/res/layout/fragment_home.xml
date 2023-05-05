@@ -3,11 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< Updated upstream
-    android:background="@color/backgrounfColor">
-=======
     android:background="@color/background_color">
->>>>>>> Stashed changes
 
     <ImageView
         android:id="@+id/imageContent"

@@ -5,11 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< Updated upstream
-    android:background="@color/backgrounfColor"
-=======
     android:background="@color/background_color"
->>>>>>> Stashed changes
     tools:context=".ui.login.LoginActivity">
 
 
@@ -52,11 +48,7 @@
         android:layout_marginTop="40dp"
         android:text="LOG IN"
         android:textStyle="bold"
-<<<<<<< Updated upstream
-        android:textColor="@color/backgrounfColor"
-=======
         android:textColor="@color/background_color"
->>>>>>> Stashed changes
         app:backgroundTint="@color/textColor"
         app:cornerRadius="30dp"/>
 
@@ -75,11 +67,7 @@
         android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"
         app:srcCompat="@drawable/group_10"
-<<<<<<< Updated upstream
-        app:backgroundTint="@color/backgrounfColor"/>
-=======
         app:backgroundTint="@color/background_color"/>
->>>>>>> Stashed changes
 
     <Button
         android:id="@+id/buttonSignUp"
