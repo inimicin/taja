@@ -53,6 +53,7 @@
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
+            android:text="Read More"
             android:textColor="@color/textColor" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>

@@ -62,7 +62,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         } else if (view.getId() == R.id.buttonSignUp) {
             Intent i = new Intent(this, SignupActivity.class);
             startActivity(i);
-            finish();
         }
     }
     private void updateUiWithUser(LoggedInUserView model) {

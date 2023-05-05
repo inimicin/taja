@@ -79,6 +79,11 @@ public class PanduanFragment extends Fragment {
         articleList.add(new Article("Bokhasi", "user1", "03 Mei 2023"));
         articleList.add(new Article("Cara Tanam", "user2", "03 Mei 2023"));
         articleList.add(new Article("Pelatihan", "user3", "03 Mei 2023"));
+        articleList.add(new Article("Pelatihan", "user3", "03 Mei 2023"));
+        articleList.add(new Article("Pelatihan", "user3", "03 Mei 2023"));
+        articleList.add(new Article("Pelatihan", "user3", "03 Mei 2023"));
+        articleList.add(new Article("Pelatihan", "user3", "03 Mei 2023"));
+        articleList.add(new Article("Pelatihan", "user3", "03 Mei 2023"));
 
         ArticleListAdapter articleListAdapter = new ArticleListAdapter(articleList, getActivity());
         recyclerView.setAdapter(articleListAdapter);

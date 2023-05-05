@@ -76,10 +76,11 @@
         <HorizontalScrollView
             android:id="@+id/horizontalScrollView"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="40dp"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView13">
 
             <LinearLayout
@@ -92,7 +93,8 @@
                     android:layout_width="330dp"
                     android:layout_height="140dp"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="45dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:backgroundTint="@color/bg2"
                     app:cardCornerRadius="20dp">
 
@@ -138,7 +140,8 @@
                     android:layout_width="330dp"
                     android:layout_height="140dp"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="45dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:backgroundTint="@color/bg2"
                     app:cardCornerRadius="20dp">
 
@@ -184,7 +187,8 @@
                     android:layout_width="330dp"
                     android:layout_height="140dp"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="45dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:backgroundTint="@color/bg2"
                     app:cardCornerRadius="20dp">
 
@@ -262,8 +266,9 @@
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_marginTop="15dp"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="40dp"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/myEvent">
 
             <LinearLayout
@@ -276,7 +281,8 @@
                     android:layout_width="330dp"
                     android:layout_height="140dp"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="45dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:backgroundTint="@color/bg2"
                     app:cardCornerRadius="20dp">
 
@@ -322,7 +328,8 @@
                     android:layout_width="330dp"
                     android:layout_height="140dp"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="45dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:backgroundTint="@color/bg2"
                     app:cardCornerRadius="20dp">
 
@@ -368,7 +375,8 @@
                     android:layout_width="330dp"
                     android:layout_height="140dp"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="45dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:backgroundTint="@color/bg2"
                     app:cardCornerRadius="20dp">
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgrounfColor">
+    android:background="@color/background_color">
 
 
     <ImageView
@@ -25,7 +25,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        android:backgroundTint="@color/backgrounfColor"
+        android:backgroundTint="@color/background_color"
         app:srcCompat="@drawable/group_12" />
 
     <ImageButton
@@ -33,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:backgroundTint="@color/backgrounfColor"
+        android:backgroundTint="@color/background_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonEP"
@@ -65,7 +65,7 @@
             android:textSize="11dp"
             android:layout_marginLeft="47dp"
             android:layout_marginTop="50dp"
-            android:textColor="@color/backgrounfColor"/>
+            android:textColor="@color/background_color"/>
 
         <ImageButton
             android:id="@+id/buttonHome"
@@ -99,7 +99,7 @@
             android:layout_height="wrap_content"
             android:text="Other"
             android:textSize="11dp"
-            android:textColor="@color/backgrounfColor"
+            android:textColor="@color/background_color"
             android:layout_gravity="right"
             android:layout_marginTop="50dp"
             android:layout_marginRight="50dp"/>
